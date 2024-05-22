@@ -11,7 +11,8 @@
 
 body {
     font-size: 1.75rem;
-                                                                        font-family: 'Avenir', sans-serif;
+    font-family: 'Avenir', sans-serif;
+    color: black;
                                                 
 }
 
@@ -37,7 +38,7 @@ h1 a, h1 a:hover {
 }
 
 .about {
-    font-size: 2rem;
+    font-size: 1.95rem;
 }
 
 /* center the nav pills */

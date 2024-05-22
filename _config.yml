@@ -1,6 +1,6 @@
 port: 3000
 markdown: kramdown
-name: 'My Reps'
+name: 'Advocate!'
 url: http://findmyreps.datamade.us
 encoding: utf-8
 timezone: America/Chicago

@@ -52,7 +52,7 @@ When you get a key, set the `google_api_key` in `_config.yml`.
 ```
 port:  5000
 markdown: kramdown
-name: "My Reps"
+name: "Advocate!"
 
 ...
 
@@ -69,7 +69,7 @@ First, create a new tagline in the `_layouts/default.html` page.
 
 ```html
 <div class="text-center">
-	<h1><a href="index.html">My Reps</a></h1>
+	<h1><a href="index.html">Advocate!</a></h1>
 	<!-- Update this tagline! -->
 	<p class="lead">
 		Enter your address to <strong>find and contact</strong> your local, county,

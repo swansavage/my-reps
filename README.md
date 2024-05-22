@@ -1,6 +1,6 @@
 # My Reps
 
-My Reps helps you locate and contact your federal, state, county and local elected representatives. Based on [my-reps-pbp](https://github.com/datamade/my-reps-pbp) by [DataMade](https://datamade.us/) and [Participatory Budgeting Project](http://participatorybudgeting.org/). Powered by the [Google Civic Information API](https://developers.google.com/civic-information/).
+My Reps helps you locate and contact your local, county, state, and federal elected representatives. Based on [my-reps-pbp](https://github.com/datamade/my-reps-pbp) by [DataMade](https://datamade.us/) and [Participatory Budgeting Project](http://participatorybudgeting.org/). Powered by the [Google Civic Information API](https://developers.google.com/civic-information/).
 
 For more, read our launch blog post: "[We find your reps so you don't have to](https://datamade.us/blog/we-find-your-reps-so-you-dont-have-to)".
 
@@ -100,7 +100,7 @@ Note that we're using [EJS templates](http://www.embeddedjs.com/) for this part,
 
 **Limit your results to specific levels of government (local, county, state & federal)**
 
-In `js/lookup_tool.js` you can toggle if you want to show federal, state, county and local government representatives.
+In `js/lookup_tool.js` you can toggle if you want to show local, county, state, and federal government representatives.
 
 ```javascript
 var show_federal = true; //change this to false to hide federal results
@@ -150,7 +150,7 @@ If you need professional assistance, contact DataMade at info@datamade.us
 
 ## Reporting outdated or missing information
 
-Information on elected officials comes from the [Google Civic Information API](https://developers.google.com/civic-information/), which aggregates data across the United States on elected officials in federal, state, county and local government offices.
+Information on elected officials comes from the [Google Civic Information API](https://developers.google.com/civic-information/), which aggregates data across the United States on elected officials in local, county, state, and federal government offices.
 
 Sometimes data is outdated or missing. If you notice an issue with the data, please [report it to Google](https://docs.google.com/forms/d/e/1FAIpQLScFpFTOkTpm0YoerLLprY_ySS9PRXLsu27SM01hebHqkefW2Q/viewform).
 

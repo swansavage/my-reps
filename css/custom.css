@@ -104,3 +104,7 @@ a:hover {
 .btn-default, .btn-default:hover {
     background: rgb(135,169,34) !important;
 }
+
+input[type='checkbox'] {
+    accent-color:  rgb(135,169,34);
+}

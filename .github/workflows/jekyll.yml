@@ -1,0 +1,37 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch if it's not 'main'
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Adjust this if you are using a different Ruby version
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build site
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          echo "google_api_key: $GOOGLE_API_KEY" >> _config.yml
+          bundle exec jekyll build --config _config.yml
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

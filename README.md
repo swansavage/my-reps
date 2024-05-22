@@ -25,7 +25,8 @@ Click the 'Fork' button in the upper right corner of this page to copy it to you
 #### 2. Clone this project to your local computer
 
 Next, you can clone it to your local computer (requires the command line):
-``` bash
+
+```bash
 git clone git@github.com:your-name-here/my-reps.git
 cd my-reps
 ```
@@ -38,11 +39,11 @@ For the address search, map and representative lookup to work, you'll need to ge
 
 You'll need to make sure that you enable the following API services from Google:
 
-* Geocoding API
-* Geolocation API
-* Maps Javascript API
-* Google Civic Information API
-* Places API
+- Geocoding API
+- Geolocation API
+- Maps Javascript API
+- Google Civic Information API
+- Places API
 
 Read Google's instructions on how to enable these services: https://support.google.com/googleapi/answer/6158841?hl=en
 
@@ -67,10 +68,13 @@ Some examples of things you can do:
 First, create a new tagline in the `_layouts/default.html` page.
 
 ```html
-<div class='text-center'>
-    <h1><a href='index.html'>My Reps</a></h1>
-    <!-- Update this tagline! -->
-    <p class='lead'>Enter your address to <strong>find and contact</strong> your federal, state, county and local elected representatives</p>
+<div class="text-center">
+	<h1><a href="index.html">My Reps</a></h1>
+	<!-- Update this tagline! -->
+	<p class="lead">
+		Enter your address to <strong>find and contact</strong> your local, county,
+		state, and federal representatives
+	</p>
 </div>
 ```
 
@@ -81,11 +85,11 @@ Then, add text to the top of the `index.html` page.
 layout: default
 ---
 
-<p class='text-center'>This is my call to action. Let's do something about it!</p>
+<p class="text-center">
+	This is my call to action. Let's do something about it!
+</p>
 
-<div class="row">
-...
-
+<div class="row">...</div>
 ```
 
 **Change the instructions in the 'contact' popup for each representative**
@@ -99,12 +103,10 @@ Note that we're using [EJS templates](http://www.embeddedjs.com/) for this part,
 In `js/lookup_tool.js` you can toggle if you want to show federal, state, county and local government representatives.
 
 ```javascript
-
 var show_federal = true; //change this to false to hide federal results
-var show_state   = true;
-var show_county  = true;
-var show_local   = true;
-
+var show_state = true;
+var show_county = true;
+var show_local = true;
 ```
 
 #### 5. Run it
@@ -120,6 +122,7 @@ Then, open your web browser and navigate to http://localhost:5000
 #### 6. Deploy it with GitHub pages
 
 **GitHub pages** You can host your table on GitHub pages for free! Once you've made all your changes and committed them, push everything in the `master` branch to `gh-pages`, which automatically enables GitHub pages.
+
 ```bash
 git push origin master:gh-pages
 ```
@@ -135,7 +138,12 @@ Want to embed your nifty table on your website? You can use an [iframe](http://w
 Here's an example:
 
 ```html
-<iframe style="border-style: none;" src="https://datamade.github.io/my-reps/" height="950" width="600"></iframe>
+<iframe
+	style="border-style: none;"
+	src="https://datamade.github.io/my-reps/"
+	height="950"
+	width="600"
+></iframe>
 ```
 
 If you need professional assistance, contact DataMade at info@datamade.us
@@ -152,15 +160,15 @@ Data comes from the [Google Civic Information API](https://developers.google.com
 
 We used the following open source tools:
 
-* [Jekyll](http://jekyllrb.com/docs/installation/) - Static website framework
-* [Bootstrap](http://getbootstrap.com/) - Responsive HTML, CSS and Javascript framework
-* [jQuery Address](https://github.com/asual/jquery-address) - javascript library creating RESTful URLs
-* [Google Civic Information API](https://developers.google.com/civic-information/) - API for looking up elected representatives in the USA
+- [Jekyll](http://jekyllrb.com/docs/installation/) - Static website framework
+- [Bootstrap](http://getbootstrap.com/) - Responsive HTML, CSS and Javascript framework
+- [jQuery Address](https://github.com/asual/jquery-address) - javascript library creating RESTful URLs
+- [Google Civic Information API](https://developers.google.com/civic-information/) - API for looking up elected representatives in the USA
 
 ## Team
 
-* Derek Eder - developer, content
-* Eric van Zanten - developer
+- Derek Eder - developer, content
+- Eric van Zanten - developer
 
 ## Errors and Bugs
 
@@ -169,9 +177,9 @@ Report it here: https://github.com/datamade/my-reps/issues
 
 ## Note on Patches and Pull Requests
 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Send a pull request. Bonus points for topic branches.
+- Fork the project.
+- Make your feature addition or bug fix.
+- Send a pull request. Bonus points for topic branches.
 
 ## Copyright
 

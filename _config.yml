@@ -4,7 +4,7 @@ name: 'My Reps'
 url: http://findmyreps.datamade.us
 encoding: utf-8
 timezone: America/Chicago
-description: 'Enter your address to find and contact your federal, state, county and local elected representatives'
+description: 'Enter your address to find and contact your local, county, state, and federal representatives'
 gems:
   - jekyll-redirect-from
 google_api_key: <%= ENV['GOOGLE_API_KEY'] %>
